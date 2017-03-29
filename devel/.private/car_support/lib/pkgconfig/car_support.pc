@@ -1,0 +1,8 @@
+prefix=/home/ezra/car/devel/.private/car_support
+
+Name: car_support
+Description: Description of car_support
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ezra/car/devel/.private/car_support/lib 
+Requires: 

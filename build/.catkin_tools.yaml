@@ -1,0 +1,6 @@
+devel_space: /home/ezra/car/devel
+install: false
+install_space: /home/ezra/car/install
+profile: default
+source_space: /home/ezra/car/src
+workspace: /home/ezra/car
