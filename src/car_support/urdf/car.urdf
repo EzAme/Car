@@ -1,70 +1,99 @@
-<xml version="1.0" ?>
-<robot name="car" xmlns:xacro="http://ros.org/wiki/xacro">
+<?xml version="1.0"?>
+<robot name="car">
 
- <link name="world"/>
+	<link name="base_link">
+		<visual>
+			<orgin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.25 0.5 0.125"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<box size="0.25 0.5 0.125"/>
+			</geometry>
+		</collision>
+	</link>
 
- <link name="base_link">
-  <visual>
-   <geometry>
-     <box size="2.0 4.0 1.0"/>
-   </geometry>
-  </visual>
-  <collision>
-   <geometry>
-    <box size="2.0 4.0 1.0"/>
-   </geometry>
-  </collision>
- </link>
+	<link name="FLwheel">
+		<visual>
+			<orgin xyz="0 0 0" rpy="0 1.57079632679 0"/>
+			<geometry>
+				<cylinder length="0.125" radius ="0.25"/>
+			</geometry>
+		</visual>
+		<collision>
+ 			<geometry>
+    			<cylinder length="0.125" radius ="0.25"/>
+			</geometry>
+		</collision>
+	</link>
 
- <link name="FLwheel">
-  <visual>
-   <geometry>
-     <cylinder length="0.5" radius ="1.0"/>
-   </geometry>
-  </visual>
-  <collision>
-   <geometry>
-    <cylinder length="0.5" radius ="1.0"/>
-   </geometry>
-  </collision>
- </link>
+	<link name="FRwheel">
+		<visual>
+			<orgin xyz="0 0 0" rpy="0 1.57079632679 0"/>
+			<geometry>
+				<cylinder length="0.125" radius ="0.25"/>
+			</geometry>
+		</visual>
+		<collision>
+ 			<geometry>
+    			<cylinder length="0.125" radius ="0.25"/>
+			</geometry>
+		</collision>
+	</link>
 
- <link name="FRwheel">
-  <visual>
-   <geometry>
-     <cylinder length="0.5" radius ="1.0"/>
-   </geometry>
-  </visual>
-  <collision>
-   <geometry>
-    <cylinder length="0.5" radius ="1.0"/>
-   </geometry>
-  </collision>s
- </link>
+	<link name="RLwheel">
+		<visual>
+			<orgin xyz="0 0 0" rpy="0 1.57079632679 0"/>
+			<geometry>
+				<cylinder length="0.125" radius ="0.25"/>
+			</geometry>
+		</visual>
+		<collision>
+ 			<geometry>
+    			<cylinder length="0.125" radius ="0.25"/>
+			</geometry>
+		</collision>
+	</link>
 
- <link name="RLwheel">
-  <visual>
-   <geometry>
-     <cylinder length="0.5" radius ="1.0"/>
-   </geometry>
-  </visual>
-  <collision>
-   <geometry>
-    <cylinder length="0.5" radius ="1.0"/>
-   </geometry>
-  </collision>
- </link>
+	<link name="RRwheel">
+		<visual>
+			<orgin xyz="0 0 0" rpy="0 1.57079632679 0"/>
+			<geometry>
+				<cylinder length="0.125" radius ="0.25"/>
+			</geometry>
+		</visual>
+		<collision>
+ 			<geometry>
+    			<cylinder length="0.125" radius ="0.25"/>
+			</geometry>
+		</collision>
+	</link>
 
- <link name="RRwheel">
-  <visual>
-   <geometry>
-     <cylinder length="0.5" radius ="1.0"/>
-   </geometry>
-  </visual>
-  <collision>
-   <geometry>
-    <cylinder length="0.5" radius ="1.0"/>
-   </geometry>
-  </collision>
- </link>
+	<joint name="FLw2Body" type="continuous">
+		<parent link="base_link"/>
+		<child link="FLwheel"/>
+		<orgin xyz="0.14 0.25 0" rpy="0 0 0"/>
+	<joint/>
+
+	<joint name="FRw2Body" type="continuous">
+		<parent link="base_link"/>
+		<child link="FRwheel"/>
+		<orgin xyz="-0.14 0.25 0" rpy="0 0 0"/>
+	<joint/>
+
+	<joint name="RLw2Body" type="continuous">
+		<parent link="base_link"/>
+		<child link="RLwheel"/>
+		<orgin xyz="0.14 -0.25 0" rpy="0 0 0"/>
+	<joint/>
+
+	<joint name="RRw2Body" type="continuous">
+		<parent link="base_link"/>
+		<child link="RRwheel"/>
+		<orgin xyz="-0.14 -0.25 0" rpy="0 0 0"/>
+	<joint/>
+
+
 </robot>
