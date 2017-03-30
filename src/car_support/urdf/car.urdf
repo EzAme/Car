@@ -1,9 +1,9 @@
-<?xml version="1.0" ?>
+<xml version="1.0" ?>
 <robot name="car" xmlns:xacro="http://ros.org/wiki/xacro">
-</robot>
- `<link name="world"/>`
 
- <link name="body">
+ <link name="world"/>
+
+ <link name="base_link">
   <visual>
    <geometry>
      <box size="2.0 4.0 1.0"/>
@@ -39,7 +39,7 @@
    <geometry>
     <cylinder length="0.5" radius ="1.0"/>
    </geometry>
-  </collision>
+  </collision>s
  </link>
 
  <link name="RLwheel">
@@ -67,3 +67,4 @@
    </geometry>
   </collision>
  </link>
+</robot>
