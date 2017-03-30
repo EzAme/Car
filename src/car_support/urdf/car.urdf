@@ -17,56 +17,56 @@
 
 	<link name="FLwheel">
 		<visual>
-			<orgin xyz="0 0 0" rpy="0 1.57079632679 0"/>
+			<orgin xyz="0 0 0" rpy="0 1.5708 0"/>
 			<geometry>
-				<cylinder length="0.125" radius ="0.25"/>
+				<cylinder length="0.06" radius ="0.125"/>
 			</geometry>
 		</visual>
 		<collision>
  			<geometry>
-    			<cylinder length="0.125" radius ="0.25"/>
+    			<cylinder length="0.06" radius ="0.125"/>
 			</geometry>
 		</collision>
 	</link>
 
 	<link name="FRwheel">
 		<visual>
-			<orgin xyz="0 0 0" rpy="0 1.57079632679 0"/>
+			<orgin xyz="0 0 0" rpy="1.5708 0 0"/>
 			<geometry>
-				<cylinder length="0.125" radius ="0.25"/>
+				<cylinder length="0.06" radius ="0.125"/>
 			</geometry>
 		</visual>
 		<collision>
  			<geometry>
-    			<cylinder length="0.125" radius ="0.25"/>
+    			<cylinder length="0.06" radius ="0.125"/>
 			</geometry>
 		</collision>
 	</link>
 
 	<link name="RLwheel">
 		<visual>
-			<orgin xyz="0 0 0" rpy="0 1.57079632679 0"/>
+			<orgin xyz="0 0 0" rpy="0 1.5708 0"/>
 			<geometry>
-				<cylinder length="0.125" radius ="0.25"/>
+				<cylinder length="0.06" radius ="0.125"/>
 			</geometry>
 		</visual>
 		<collision>
  			<geometry>
-    			<cylinder length="0.125" radius ="0.25"/>
+    			<cylinder length="0.06" radius ="0.125"/>
 			</geometry>
 		</collision>
 	</link>
 
 	<link name="RRwheel">
 		<visual>
-			<orgin xyz="0 0 0" rpy="0 1.57079632679 0"/>
+			<orgin xyz="0 0 0" rpy="0 1.5708 0"/>
 			<geometry>
-				<cylinder length="0.125" radius ="0.25"/>
+				<cylinder length="0.06" radius ="0.125"/>
 			</geometry>
 		</visual>
 		<collision>
  			<geometry>
-    			<cylinder length="0.125" radius ="0.25"/>
+    			<cylinder length="0.06" radius ="0.125"/>
 			</geometry>
 		</collision>
 	</link>
@@ -85,7 +85,7 @@
 
 	<joint name="RLw2Body" type="continuous">
 		<parent link="base_link"/>
-		<child link="RLwheel"/>
+		<child link="RLwheel"/>x
 		<orgin xyz="0.14 -0.25 0" rpy="0 0 0"/>
 	</joint>
 
