@@ -75,25 +75,25 @@
 		<parent link="base_link"/>
 		<child link="FLwheel"/>
 		<orgin xyz="0.14 0.25 0" rpy="0 0 0"/>
-	<joint/>
+	</joint>
 
 	<joint name="FRw2Body" type="continuous">
 		<parent link="base_link"/>
 		<child link="FRwheel"/>
 		<orgin xyz="-0.14 0.25 0" rpy="0 0 0"/>
-	<joint/>
+	</joint>
 
 	<joint name="RLw2Body" type="continuous">
 		<parent link="base_link"/>
 		<child link="RLwheel"/>
 		<orgin xyz="0.14 -0.25 0" rpy="0 0 0"/>
-	<joint/>
+	</joint>
 
 	<joint name="RRw2Body" type="continuous">
 		<parent link="base_link"/>
 		<child link="RRwheel"/>
 		<orgin xyz="-0.14 -0.25 0" rpy="0 0 0"/>
-	<joint/>
+	</joint>
 
 
 </robot>
